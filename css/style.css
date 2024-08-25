@@ -1,0 +1,434 @@
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter-VariableFont_slntwght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+/* Start index.html */
+/* Start header */
+
+header {
+  padding: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: white;
+}
+header nav .search {
+  width: 70%;
+  font-size: 0;
+  background-color: #5757ff;
+  display: inline-block;
+}
+header nav .search input {
+  font-size: 20px;
+  padding: 10px;
+  width: 92%;
+}
+header nav .search i {
+  font-size: 20px;
+}
+header nav .search button {
+  border: none;
+  color: white;
+  background-color: #5757ff;
+  padding: 10px 20px;
+  text-align: center;
+  width: 8%;
+  cursor: pointer;
+}
+header nav .content {
+  display: inline-block;
+  width: 28%;
+  text-align: right;
+}
+header nav .content .login {
+  display: inline-block;
+  font-size: 20px;
+  color: #999999;
+  vertical-align: middle;
+}
+header nav .content .cart {
+  display: inline-block;
+  width: 20%;
+  cursor: pointer;
+}
+header nav .content .cart i {
+  color: #5757ff;
+  font-size: 30px;
+  position: relative;
+  vertical-align: middle;
+}
+header nav .content .cart i .numOfProducts {
+  color: #ff2222;
+  position: absolute;
+  font-size: 15px;
+  font-weight: 600;
+  top: -15%;
+  left: 42%;
+}
+header nav .content .cart .word {
+  margin-left: -6px;
+}
+
+/* End header */
+
+/* Start Body */
+section {
+  padding: 10px;
+  text-align: center;
+}
+section .header {
+  font-size: 0;
+  margin-bottom: 20px;
+}
+section .header .name {
+  display: inline-block;
+  width: 50%;
+  font-size: 14px;
+  text-align: left;
+}
+section .header .name b {
+  font-size: 20px;
+}
+section .header .sort {
+  display: inline-block;
+  width: 50%;
+  font-size: 14px;
+  color: #999999;
+  text-align: right;
+}
+section .header .sort .by {
+  color: #5757ff;
+}
+section .body {
+  font-size: 0;
+}
+
+section .body .card {
+  border: 1px solid #999999;
+  display: inline-block;
+  width: 24.5%;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: white;
+}
+section .body .card .image {
+  height: 280px;
+  padding: 20px 0 20px 0;
+  cursor: pointer;
+}
+section .body .card img {
+  min-height: 75%;
+  max-height: 75%;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+section .body .card .title {
+  text-align: left;
+  color: #999999;
+  font-size: 18px;
+  padding: 20px;
+}
+section .body .card .content {
+  text-align: left;
+  font-size: 18px;
+  padding: 20px;
+}
+section .body .card .content .price {
+  display: inline-block;
+  color: #5757ff;
+  font-weight: bold;
+  width: 49%;
+}
+section .body .card .content .rate {
+  display: inline-block;
+  text-align: right;
+  width: 49%;
+}
+section .body .card .content .rate i {
+  color: #f8d400;
+}
+section .body .card .content .discount {
+  color: #dddddd;
+  font-size: 14px;
+  text-decoration: line-through;
+}
+section .body .card .content .free {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 5px 0 30px 0;
+}
+section .body .card .content button {
+  color: white;
+  border: none;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+section .body .card .content .add {
+  background-color: #7bdb00;
+}
+section .body .card .content .remove {
+  background-color: #db4200;
+}
+
+/* End Body */
+/* End index.html */
+
+/* Start Cart.html */
+body {
+  background-color: #efefef;
+}
+.container {
+  padding: 20px;
+}
+.container .left {
+  margin-top: 20px;
+  display: inline-block;
+  width: 65%;
+}
+.container .left .card {
+  padding: 20px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+.container .left .card .image {
+  width: 15%;
+  display: inline-block;
+}
+.container .left .card .image img {
+  max-width: 90%;
+}
+.container .left .card .content {
+  vertical-align: top;
+  display: inline-block;
+  width: 84%;
+}
+.container .left .card .content .name {
+  color: #555555;
+  font-size: 20px;
+}
+.container .left .card .content .details .price {
+  color: #5757ff;
+  font-size: 25px;
+  display: inline-block;
+  width: 50%;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.container .left .card .content .details .quantity {
+  display: inline-block;
+  width: 49%;
+  text-align: right;
+}
+.container .left .card .content .details .quantity input {
+  padding: 10px;
+  border: 1px solid #999999;
+}
+.container .left .card .content .free {
+  font-weight: bold;
+  font-size: 20px;
+}
+.container .left .card .content .free i {
+  color: #7bdb00;
+  font-weight: bold;
+  font-size: 25px;
+}
+.container .left .card .content .info {
+  margin-top: 15px;
+  line-height: 2;
+}
+.container .left .card .content .info .row {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.container .left .card .content .info .row .first {
+  width: 18%;
+  margin-right: 20px;
+  display: inline-block;
+  color: #555555;
+}
+.container .left .card .content .info .row .second {
+  display: inline-block;
+  width: 70%;
+  vertical-align: top;
+  color: #888888;
+}
+.container .left .card .footer {
+  border-top: 2px solid #eeeeee;
+  padding-top: 20px;
+  color: #5757ff;
+  font-size: 18px;
+}
+.container .left .card .footer .save {
+  padding-right: 40px;
+  border-right: 2px solid #999999;
+  cursor: pointer;
+}
+.container .left .card .footer .delete {
+  margin-left: 40px;
+  cursor: pointer;
+}
+.container .right {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 20px;
+  margin-left: 30px;
+  width: 30%;
+}
+.container .right .up {
+  background-color: white;
+}
+.container .right .up .total {
+  padding: 20px;
+  border-bottom: 2px solid #eeeeee;
+}
+.container .right .up .total h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.container .right .up .total p {
+  font-size: 30px;
+  font-weight: bold;
+}
+.container .right .up .total p span {
+  font-size: 16px;
+  color: #999999;
+  font-weight: 600;
+}
+.container .right .up .spaces {
+  padding: 130px;
+}
+.container .right .down {
+  text-align: center;
+}
+.container .right .down .checkout {
+  border: none;
+  background-color: #7bdb00;
+  padding: 20px;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  cursor: pointer;
+}
+.container .right .down .signin {
+  display: block;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 10px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-size: 18px;
+  color: #999999;
+  display: block;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* End Cart.html */
+
+/* Start product.html */
+
+.product {
+  padding: 20px;
+  background-color: white;
+  border: 5px solid #00d0ff;
+  width: 60%;
+  margin: 80px auto;
+}
+
+.product .left {
+  display: inline-block;
+  width: 49%;
+}
+.product .left .main-image {
+  width: 100%;
+  height: 250px;
+  text-align: center;
+}
+.product .left .main-image img {
+  max-width: 95%;
+  max-height: 100%;
+  display: inline-block;
+}
+.product .left .images {
+  width: 100%;
+  text-align: center;
+}
+.product .left .images img {
+  display: inline-block;
+  max-width: 20%;
+  margin: 20px;
+}
+.product .right {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+.product .right .rate {
+  margin-top: 15px;
+}
+.product .right .rate i {
+  color: #f8d400;
+}
+.product .right .price {
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+.product .right .price .new-price {
+  display: inline-block;
+}
+.product .right .price .old-price {
+  display: inline-block;
+  padding: 10px 25px;
+  color: #888888;
+  text-decoration: line-through;
+}
+.product .right .details {
+  color: #888888;
+  margin-bottom: 20px;
+}
+.product .right span {
+  color: #888888;
+  font-weight: bold;
+  display: inline-block;
+  width: 32%;
+  cursor: pointer;
+}
+.product .right .details .active {
+  color: black;
+}
+.product .right p {
+  margin-bottom: 20px;
+}
+.product .right .buttons button {
+  border: 2px solid #00d0ff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  width: 45%;
+  background-color: white;
+  margin-right: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.product .right .buttons button:hover {
+  background-color: #00d0ff;
+}
+.product .right .buttons .add-to i {
+  margin-right: 5px;
+}
